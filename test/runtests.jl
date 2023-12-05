@@ -2,5 +2,5 @@ using VPMR
 using Test
 
 @testset "VPMR.jl" begin
-    # Write your tests here.
+    include("VP_kernel.jl")
 end
