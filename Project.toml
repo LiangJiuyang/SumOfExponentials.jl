@@ -1,7 +1,7 @@
 name = "VPMR"
 uuid = "577c3ae3-e2e9-4c4d-8517-88b63258dae5"
 authors = ["Xuanzhao Gao <xz.gao@connect.ust.hk> and contributors"]
-version = "1.0.0-DEV"
+version = "0.1.0"
 
 [deps]
 GaussQuadrature = "d54b0c1a-921d-58e0-8e36-89d8069c0969"
