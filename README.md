@@ -51,17 +51,9 @@ More benchmark is shown in the following figure, the code can be found in the `e
 ## Usage
 
 The SOE approach is quite useful since the $\exp(\cdot)$ function is easy to be handled.
-One of the most important usage is called the fast exponential transform (FET), which can be used to calculate the summation 
-$$
-\sum_{i,j} q_{1}^{i} q_{2}^{j}  f \left( α^{-1} |x_i - x_j| \right)
-$$
-in $O(N)$ steps.
+One of the most important usage is called the fast exponential transform (FET), which can be used to calculate the summation $\sum_{i,j} q_{1}^{i} q_{2}^{j}  f \left( α^{-1} |x_i - x_j| \right)$ in $O(N)$ steps.
 For details, please see the implentation in `src/fast_exp_transform.jl`.
-Here we compare the cost of calculating
-$$
-\sum_{i,j} q_{1}^{i} q_{2}^{j} \exp \left( -(x_i - x_j)^2 \right)
-$$
-directly and via FET, as shown in fig below.
+Here we compare the cost of calculating $\sum_{i,j} q_{1}^{i} q_{2}^{j} \exp \left( -(x_i - x_j)^2 \right)$ directly and via FET, as shown in fig below.
 
 ![](examples/FET.png)
 
