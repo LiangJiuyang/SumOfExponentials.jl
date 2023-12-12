@@ -1,8 +1,8 @@
 # SumOfExponentials.jl
 
-[![Build Status](https://github.com/ArrogantGao/VPMR.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ArrogantGao/SumOfExponentials.jl/actions/workflows/CI.yml?query=branch%3Amain)
-[![Build Status](https://travis-ci.com/ArrogantGao/VPMR.jl.svg?branch=main)](https://travis-ci.com/ArrogantGao/SumOfExponentials.jl)
-[![Coverage](https://codecov.io/gh/ArrogantGao/VPMR.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ArrogantGao/SumOfExponentials.jl)
+[![Build Status](https://github.com/ArrogantGao/SumOfExponentials.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ArrogantGao/SumOfExponentials.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://travis-ci.com/ArrogantGao/SumOfExponentials.jl.svg?branch=main)](https://travis-ci.com/ArrogantGao/SumOfExponentials.jl)
+[![Coverage](https://codecov.io/gh/ArrogantGao/SumOfExponentials.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ArrogantGao/SumOfExponentials.jl)
 
 
 `SumOfExponentials.jl` is a `Julia` implentation the VPMR method by Zixuan Gao, Jiuyang Liang and Zhenli Xu in [A Kernel-Independent Sum-of-Exponentials Method](https://link.springer.com/10.1007/s10915-022-01999-1), which can be used to represent rapid decaying kernels via sum of exponentials.
