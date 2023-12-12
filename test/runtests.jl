@@ -1,8 +1,8 @@
-using SOEVPMR
+using SumOfExponentials
 using Test
 using SpecialFunctions
 
-@testset "SOEVPMR.jl" begin
+@testset "SumOfExponentials.jl" begin
     include("VP.jl")
     include("VPMR.jl")
 end

@@ -1,17 +1,17 @@
-# SOEVPMR
+# SumOfExponentials.jl
 
-[![Build Status](https://github.com/ArrogantGao/VPMR.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ArrogantGao/SOEVPMR.jl/actions/workflows/CI.yml?query=branch%3Amain)
-[![Build Status](https://travis-ci.com/ArrogantGao/VPMR.jl.svg?branch=main)](https://travis-ci.com/ArrogantGao/SOEVPMR.jl)
-[![Coverage](https://codecov.io/gh/ArrogantGao/VPMR.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ArrogantGao/SOEVPMR.jl)
+[![Build Status](https://github.com/ArrogantGao/VPMR.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ArrogantGao/SumOfExponentials.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://travis-ci.com/ArrogantGao/VPMR.jl.svg?branch=main)](https://travis-ci.com/ArrogantGao/SumOfExponentials.jl)
+[![Coverage](https://codecov.io/gh/ArrogantGao/VPMR.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ArrogantGao/SumOfExponentials.jl)
 
 
-`SOEVPMR.jl` is an implentation the method by Zixuan Gao, Jiuyang Liang and Zhenli Xu in [A Kernel-Independent Sum-of-Exponentials Method](https://link.springer.com/10.1007/s10915-022-01999-1), which can be used to represent rapid decaying kernels via sum of exponentials.
+`SumOfExponentials.jl` is a `Julia` implentation the VPMR method by Zixuan Gao, Jiuyang Liang and Zhenli Xu in [A Kernel-Independent Sum-of-Exponentials Method](https://link.springer.com/10.1007/s10915-022-01999-1), which can be used to represent rapid decaying kernels via sum of exponentials.
 
 ## Getting Started
 
 Add this package in julia by typing `]` in Julia REPL and then
 ```julia
-pkg> add SOEVPMR
+pkg> add SumOfExponentials
 ```
 to install the package.
 
@@ -33,7 +33,7 @@ for details please refer to the article.
 
 Here is an example of using VPMR, where we find a 12 term approximation for Gaussian function:
 ```julia
-julia> using VPMR
+julia> using SumOfExponentials
 
 julia> f = x -> exp(-x^2)
 #58 (generic function with 1 method)
@@ -50,3 +50,9 @@ More benchmark is shown in the following figure, the code can be found in the `e
 ## How to Contribute
 
 If you find any bug or have any suggestion, please open an issue.
+
+## References
+
+1. The VPMR article [A Kernel-Independent Sum-of-Exponentials Method](https://link.springer.com/10.1007/s10915-022-01999-1).
+2. [Matlab implementation of VPMR](https://github.com/ZXGao97/VPMR)
+3. [C++ implementation of VPMR](https://github.com/TLCFEM/vpmr)

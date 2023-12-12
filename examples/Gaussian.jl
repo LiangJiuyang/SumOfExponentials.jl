@@ -1,6 +1,6 @@
 # Approximating Gaussian
 
-using Plots, SOEVPMR
+using Plots, SumOfExponentials
 
 begin
     f = x -> exp(-x^2)

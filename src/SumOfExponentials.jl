@@ -1,4 +1,4 @@
-module SOEVPMR
+module SumOfExponentials
 
 using LinearAlgebra, SpecialFunctions, GaussQuadrature, SpecialFunctions, MatrixEquations, GenericLinearAlgebra, GenericSchur
 
