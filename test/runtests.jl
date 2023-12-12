@@ -3,5 +3,6 @@ using Test
 using SpecialFunctions
 
 @testset "VPMR.jl" begin
-    include("VP_kernel.jl")
+    include("VP.jl")
+    include("VPMR.jl")
 end

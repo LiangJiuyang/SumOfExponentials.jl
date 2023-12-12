@@ -1,12 +1,10 @@
 function VP_kernel(f::Function, nc::T, j::Int) where{T}
-    VP_K = r -> f(- nc * log((T(1.0) + cos(T(r))) / T(2))) * cos(j * T(r))
+    VP_K = r -> f(- nc * log((T(1.0) + cos(T(r))) / T(2))) * cos(T(j) * T(r))
     return VP_K
 end
 
 function VP_k(f::Function, nc::TN, n::Int, j::Int, gausspara::GaussParameter{T}) where{TN, T}
     nc = T(nc)
-    n = T(n)
-    j = T(j)
 
     K = VP_kernel(f, nc, j)
 
@@ -42,11 +40,13 @@ function get_cn(cn::Vector{Vector{BigFloat}}, j::T, l::T) where{T<:Integer}
     return cn[j + 1][l]
 end
 
-function VP(f::Function, nc::T, n::Int, gausspara::GaussParameter{TG}) where{T, TG}
+function VP(f::Function, nc::T, n::Int, N::Int) where{T}
+    gausspara = GaussParameter(BigFloat, N)
+
     k0 = VP_k(f, nc, n, 0, gausspara)
     k = big.([VP_k(f, nc, n, j, gausspara) for j in 1:2 * n - 1])
 
-    s_array = [big(j / nc) for j in 1:2*n - 1]
+    s_array = [big(j) / big(nc) for j in 1:2*n - 1]
     w_array = Vector{BigFloat}()
     
     n = BigInt(n)
@@ -79,10 +79,10 @@ function VP(f::Function, nc::T, n::Int, gausspara::GaussParameter{TG}) where{T, 
     return s_array, w_array
 end
 
-function VP_cal(f::Function, nc::T, n::Int, gausspara::GaussParameter{TG}; digit::Int = 1024) where{T, TG}
+function VP_cal(f::Function, nc::T, n::Int, N::Int; digit::Int = 1024) where{T}
     @assert iszero(digit % 256)
     s_array, w_array = setprecision(digit) do 
-        VP(f, nc, n, gausspara)
+        VP(f, nc, n, N)
     end
     return s_array, w_array
 end

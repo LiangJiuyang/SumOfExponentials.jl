@@ -9,7 +9,7 @@ function MR_cal(s::Vector{BigFloat}, w::Vector{BigFloat}, p::Int; T1::DataType =
     return T1.(s), T1.(w), T2(σ)
 end
 
-function MR(s::Vector{BigFloat}, w::Vector{BigFloat}, p::Int) where{TD <: Number}
+function MR(s::Vector{BigFloat}, w::Vector{BigFloat}, p::Int)
 
     n = length(s)
     @assert p ≤ n
