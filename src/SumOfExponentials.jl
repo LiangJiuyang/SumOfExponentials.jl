@@ -5,11 +5,13 @@ using LinearAlgebra, SpecialFunctions, GaussQuadrature, SpecialFunctions, Matrix
 export GaussParameter, Gauss_int
 export VP_cal, MR_cal, VPMR_cal
 export soe, soe_error, max_error
+export FET1d
 
 include("Gaussian_integral.jl")
 include("VP.jl")
 include("MR.jl")
 include("soe.jl")
+include("fast_exp_transform.jl")
 
 function VPMR_cal(f::Function, nc::T, n::Int, N::Int, p::Int; T1::DataType = ComplexF64, T2::DataType = Float64, digit::Int = 1024, print_info::Bool=false) where{T}
 
