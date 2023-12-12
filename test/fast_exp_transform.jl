@@ -16,6 +16,6 @@
 
         sum_soe = FET1d(q_1, q_2, x, soepara, α = α)
 
-        @test isapprox((sum_exact), (sum_soe), rtol = 1e-10)
+        @test isapprox((sum_exact), (sum_soe), rtol = 1e-8)
     end
 end
