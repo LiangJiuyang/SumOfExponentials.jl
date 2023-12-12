@@ -1,6 +1,6 @@
 # Approximating Gaussian
 
-using Plots, VPMR
+using Plots, SOEVPMR
 
 begin
     f = x -> exp(-x^2)

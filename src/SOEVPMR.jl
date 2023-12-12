@@ -1,4 +1,4 @@
-module VPMR
+module SOEVPMR
 
 using LinearAlgebra, SpecialFunctions, GaussQuadrature, SpecialFunctions, MatrixEquations, GenericLinearAlgebra, GenericSchur
 

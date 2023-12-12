@@ -1,8 +1,8 @@
-using VPMR
+using SOEVPMR
 using Test
 using SpecialFunctions
 
-@testset "VPMR.jl" begin
+@testset "SOEVPMR.jl" begin
     include("VP.jl")
     include("VPMR.jl")
 end

@@ -1,17 +1,17 @@
-# VPMR
+# SOEVPMR
 
-[![Build Status](https://github.com/ArrogantGao/VPMR.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ArrogantGao/VPMR.jl/actions/workflows/CI.yml?query=branch%3Amain)
-[![Build Status](https://travis-ci.com/ArrogantGao/VPMR.jl.svg?branch=main)](https://travis-ci.com/ArrogantGao/VPMR.jl)
-[![Coverage](https://codecov.io/gh/ArrogantGao/VPMR.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ArrogantGao/VPMR.jl)
+[![Build Status](https://github.com/ArrogantGao/VPMR.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ArrogantGao/SOEVPMR.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://travis-ci.com/ArrogantGao/VPMR.jl.svg?branch=main)](https://travis-ci.com/ArrogantGao/SOEVPMR.jl)
+[![Coverage](https://codecov.io/gh/ArrogantGao/VPMR.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ArrogantGao/SOEVPMR.jl)
 
 
-`VPMR.jl` is an implentation the method by Zixuan Gao, Jiuyang Liang and Zhenli Xu in [A Kernel-Independent Sum-of-Exponentials Method](https://link.springer.com/10.1007/s10915-022-01999-1), which can be used to represent rapid decaying kernels via sum of exponentials.
+`SOEVPMR.jl` is an implentation the method by Zixuan Gao, Jiuyang Liang and Zhenli Xu in [A Kernel-Independent Sum-of-Exponentials Method](https://link.springer.com/10.1007/s10915-022-01999-1), which can be used to represent rapid decaying kernels via sum of exponentials.
 
 ## Getting Started
 
 Add this package in julia by typing `]` in Julia REPL and then
 ```julia
-pkg> add VPMR
+pkg> add SOEVPMR
 ```
 to install the package.
 
