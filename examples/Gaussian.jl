@@ -25,9 +25,9 @@ end
 begin
     x = [0.0:0.01:10.0...]
     plot(xlabel = "x", ylabel = "error", dpi = 500, title = "Approximating Gaussian via soe")
-    plot!(x, log10.(error4), label = "N = 4")
-    plot!(x, log10.(error8), label = "N = 8")
-    plot!(x, log10.(error12), label = "N = 12")
-    plot!(x, log10.(error16), label = "N = 16")
+    plot!(x, log10.(error4), label = "p = 4")
+    plot!(x, log10.(error8), label = "p = 8")
+    plot!(x, log10.(error12), label = "p = 12")
+    plot!(x, log10.(error16), label = "p = 16")
     savefig("Gaussian.png")
 end
